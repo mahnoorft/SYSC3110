@@ -14,6 +14,10 @@ public class AddressBook {
         }
     }
 
+    public void displayName(BuddyInfo buddy){
+        System.out.println(buddy.getName());
+    }
+
     public BuddyInfo removeBuddy(int index){
         if (index >= 0 && index < buddies.size()) {
             return buddies.remove(index);
